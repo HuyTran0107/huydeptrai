@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="QLKL" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý Khóa Luận" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/QLKL.jsp" />
+    </definition>
+    <definition name="QLSV" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý SV" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/QLSV.jsp" />
+    </definition>
+    <definition name="QLGV" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý Giảng Viên" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/QLGV.jsp" />
+    </definition>
+    <definition name="QLDT" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý Đề Tài" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/QLDT.jsp" />
+    </definition>
+    <definition name="QLHDBV" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý HDBV" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/QLHDBV.jsp" />
+    </definition>
+</tiles-definitions>
